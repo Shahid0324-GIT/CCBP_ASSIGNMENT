@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+i {
+  cursor: pointer;
+  color: white;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: lightblue;
+  padding: 0.8rem;
+  border-radius: 18px;
+  width: 450px;
+}
+
+.input-search {
+  border: none;
+  background: transparent;
+  width: 100%;
+}
+
+.input-search:focus {
+  outline: none;
+  border: none;
+}
+
+.icon {
+  margin: 0 0.5rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(181, 241, 241);
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 450px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    width: 350px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.prod-img {
+  display: inline-block;
+  height: 150px;
+}
+
+.prod-details {
+  flex: 1;
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+.highlight {
+  background-color: blue;
+}
